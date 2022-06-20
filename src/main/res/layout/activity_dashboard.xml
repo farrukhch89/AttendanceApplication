@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgcolor"
+    tools:context=".DashboardActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvLecName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Lecturer Name"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/add_student_btn"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/light_blue2"
+            android:textColor="@color/white"
+            android:text="ADD STUDENT"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/view_students_btn"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:text="VIEW STUDENTS"
+            android:backgroundTint="@color/light_blue2"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/manage_attendance_btn"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="MANAGE ATTENDANCE"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/light_blue2"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/logout_btn"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:text="LOGOUT"
+            android:backgroundTint="@color/white"
+            android:textStyle="bold"
+            android:textColor="@color/light_blue2"
+            android:background="@drawable/edit_text_border"
+            android:textSize="25dp" />
+    </LinearLayout>
+</LinearLayout>

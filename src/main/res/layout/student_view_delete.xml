@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvStuNameTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tvStuName"
+        android:text="Name : "
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        app:layout_constraintLeft_toRightOf="@id/tvStuNameTag"
+        android:id="@+id/tvStuName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvStuNameTag"
+        android:text="Student Name"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvStuNameTag"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEmailTag"
+        android:text="Email : "
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvStuNameTag"
+        android:textStyle="bold"/>
+
+    <TextView
+        app:layout_constraintLeft_toRightOf="@id/tvEmailTag"
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvStuNameTag"
+        android:text="stu_studentMail@gmail.com"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvEmailTag"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCourseTag"
+        android:text="Course : "
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEmailTag"
+        android:textStyle="bold"/>
+
+    <TextView
+        app:layout_constraintLeft_toRightOf="@id/tvCourseTag"
+        android:id="@+id/tvCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvStuNameTag"
+        android:text="Computer Science"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvCourseTag"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDOBtag"
+        android:text="Date of Birth : "
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCourseTag"
+        android:textStyle="bold"/>
+
+    <TextView
+        app:layout_constraintLeft_toRightOf="@id/tvDOBtag"
+        android:id="@+id/tvDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvStuNameTag"
+        android:text="20/08/2000"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvDOBtag"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ftvAddressTag"
+        android:text="Address: "
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDOBtag"
+        android:textStyle="bold"/>
+
+    <TextView
+        app:layout_constraintLeft_toRightOf="@id/ftvAddressTag"
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvStuNameTag"
+        android:text="xyzxyz"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/ftvAddressTag"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/btn_del_stu"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tvAddress"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/btn_del_stu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

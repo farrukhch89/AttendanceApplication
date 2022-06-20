@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Attendance Monitor</string>
+    <string name="empty_string"> </string>
+    <string-array name="course">
+        <item>Choose Course</item>
+        <item>Computer Science</item>
+        <item>Computing Business</item>
+        <item>Art</item>
+        <item>Architecture</item>
+    </string-array>
+
+    <string name="open">Open </string>
+    <string name="welcome">WELCOME </string>
+    <string name="close">Close </string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_course">Modules</string>
+    <string name="menu_forgetPass">Reset Password</string>
+    <string name="menu_details">Profile</string>
+    <string name="menu_logout">Logout</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string-array name="subject_cs">
+        <item>Database</item>
+        <item>C Programming</item>
+        <item>OMT</item>
+        <item>Microprocessors</item>
+    </string-array>
+
+    <string-array name="subject_architecture">
+        <item>Working Drawing</item>
+        <item>Climatology</item>
+        <item>Building Services</item>
+        <item>Theory of Structures</item>
+    </string-array>
+
+    <string-array name="subject_art">
+        <item>Geography</item>
+        <item>Political Science</item>
+        <item>Sociology</item>
+        <item>Philosophy</item>
+    </string-array>
+
+    <string-array name="subject_CB">
+        <item>Accounting</item>
+        <item>Human Resource Management</item>
+        <item>Business Law</item>
+        <item>Marketing and Finance</item>
+    </string-array>
+
+</resources>

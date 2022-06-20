@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".LecturerDashboard">
+
+    <LinearLayout
+        android:layout_width="372dp"
+        android:layout_height="526dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnTakeAttendance"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:text="Take Attendance"
+            android:backgroundTint="@color/light_blue2"
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/btnManualAttendance"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:text="Manual Attendance"
+            android:visibility="visible"
+            android:backgroundTint="@color/light_blue2"
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/btnDownloadAttendance"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:text="Download Attendance"
+            android:visibility="visible"
+            android:backgroundTint="@color/light_blue2"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

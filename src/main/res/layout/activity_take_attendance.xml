@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TakeAttendanceActivity"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bgcolor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="341dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/dateboundry2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/course_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="Course"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/course"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/input"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/subject_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="Subject"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/subject"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/input"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/white"
+            android:textStyle="bold"
+            android:textColor="@color/light_blue2"
+            android:background="@drawable/edit_text_border"
+            android:textSize="20dp"
+            android:text="SUBMIT" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="57dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/edit_text_border"
+        android:textStyle="bold"
+        android:textColor="@color/light_blue2"
+        android:textSize="18dp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/edit_text_border"
+        android:textStyle="bold"
+        android:textColor="@color/light_blue2"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cta"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Count This Attendance"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/edit_text_border"
+            android:enabled="false"
+            android:textColor="@color/light_blue2"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/btn_upa"
+            android:layout_width="170dp"
+            android:enabled="false"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/light_blue2"
+            android:text="Update Previous Attendance"
+            android:background="@drawable/edit_text_border"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This button is for testing purpose only and should not be used more than one time. it will make the day count in the total number of days in total attendance. The day will automatically count once the timer is finished."
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="#FF0000"/>
+
+</LinearLayout>

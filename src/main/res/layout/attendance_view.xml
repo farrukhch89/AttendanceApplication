@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvDateTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date : "
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        app:layout_constraintLeft_toRightOf="@id/tvDateTag"
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvDateTag"
+        android:text="YYYY-MM-DD-HH"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvDateTag"
+        />
+
+    <TextView
+        android:id="@+id/tvAttendanceTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attendance : "
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvDateTag"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        app:layout_constraintLeft_toRightOf="@id/tvAttendanceTag"
+        android:id="@+id/tvAttendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvDateTag"
+        android:text="Present"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvAttendanceTag"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvAttendanceTag"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

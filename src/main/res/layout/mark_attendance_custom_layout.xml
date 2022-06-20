@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvEmailPTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Prefix : "
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stu_studentName"
+        android:textSize="20sp"
+        android:id="@+id/tvEmailCL"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvEmailPTag"
+        app:layout_constraintLeft_toRightOf="@id/tvEmailPTag"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark Present"
+        app:layout_constraintTop_toBottomOf="@id/tvEmailCL"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="25dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

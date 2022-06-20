@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvLecNameTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name : "
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        app:layout_constraintLeft_toRightOf="@id/tvLecNameTag"
+        android:id="@+id/tvLecName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lecturer Name"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvLecNameTag"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ftvEmailTag"
+        android:text="Email : "
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLecNameTag"
+        android:textStyle="bold"/>
+
+    <TextView
+        app:layout_constraintLeft_toRightOf="@id/ftvEmailTag"
+        android:id="@+id/ftvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stu_lecturerMail@gmail.com"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/ftvEmailTag"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ftvCourseTag"
+        android:text="Course : "
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ftvEmailTag"
+        android:textStyle="bold"/>
+
+    <TextView
+        app:layout_constraintLeft_toRightOf="@id/ftvCourseTag"
+        android:id="@+id/ftvCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer Science"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/ftvCourseTag"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ftvAddressTag"
+        android:text="Address: "
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ftvCourseTag"
+        android:textStyle="bold"/>
+
+    <TextView
+        app:layout_constraintLeft_toRightOf="@id/ftvAddressTag"
+        android:id="@+id/ftvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="xyzxyz"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/ftvAddressTag"
+        />
+
+    <Button
+        android:id="@+id/del_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:backgroundTint="@color/light_blue2"
+        app:layout_constraintTop_toBottomOf="@id/ftvAddressTag"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/del_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

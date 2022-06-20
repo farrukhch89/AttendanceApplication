@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="330dp"
+        android:layout_height="322dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/logincopy" />
+
+    <LinearLayout
+        android:layout_width="382dp"
+        android:layout_height="264dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/password_reset_btn"
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/light_blue2"
+            android:text="Reset My Password"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/lec_login_btn"
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/light_blue2"
+            android:text="Lecturer Login"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/admin_login_btn"
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/light_blue2"
+            android:text="Admin Login"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/stu_login_btn"
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/light_blue2"
+            android:text="Student Login"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/input"
+            android:hint="Username"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/input"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/white"
+            android:textStyle="bold"
+            android:textColor="@color/light_blue2"
+            android:textSize="20dp"
+            android:text="Login"
+            android:background="@drawable/edit_text_border"
+            android:visibility="gone"
+
+            />
+
+        <Button
+            android:id="@+id/admin_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/white"
+            android:textStyle="bold"
+            android:textColor="@color/light_blue2"
+            android:textSize="20dp"
+            android:text=" Login"
+            android:background="@drawable/edit_text_border"
+            android:visibility="gone"
+
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvLogInState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
